@@ -15,6 +15,9 @@ function App() {
       phone,
     }).then(response => {
       console.log(response);
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Phone:", phone);
       event.target.reset()
       setMessage("User " + name + " has been added successfully");
     }).catch(error => {
